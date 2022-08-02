@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <br>
+    <h1 class="text-center">Data Table</h1>
+        <br>
+        <table class="table table-striped table-hover table-bordered justify-content-center">
+            {% for data in datas %}
+            <tr>
+                <td>
+                    {{ data.id }}. <a href="{{ data.id }} ">{{ data.name }}</a> - {{ data.email }} <br/>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+        <a href="">Add Data</a>
+        <br>
+        <a href="">Remove Data</a>
+        <br>
+        <a href="">Update Data</a>
+</div>
+{% endblock %}

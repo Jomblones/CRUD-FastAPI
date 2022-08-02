@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Add User </h1>    
+        <br>
+        <div class="shadow p-3 mb-5 bg-body rounded">
+            <form method="POST">
+                <label for="name">Name</label>
+                <input type="text" name="name">
+                <br/>
+                <label for=""></label>
+                <input type="text">
+                <br/>
+                <label for=""></label>
+                <input type="text">
+                {{ form.submit(class="btn btn-primary") }}
+            </form>
+        </div>
+        <br/><br/>
+
+{% endblock %}
