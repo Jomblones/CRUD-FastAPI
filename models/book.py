@@ -5,7 +5,7 @@ from sqlalchemy.sql.sqltypes import Integer, String
 books = Table(
     'book', meta,
     Column('id', Integer, primary_key=True),
-    Column('book_name', String(255)),
-    Column('book_category', String(255)),
-    Column('book_author', String(255))
+    Column('title', String(255)),
+    Column('category', String(255)),
+    Column('author', String(255))
 )

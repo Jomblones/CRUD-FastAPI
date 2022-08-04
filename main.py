@@ -1,14 +1,8 @@
+from fastapi import FastAPI 
 
-from fastapi import FastAPI, Request
-from fastapi.templating import Jinja2Templates
-from fastapi.responses import HTMLResponse
-from routes.index import user
-from routes.index import book
+from routes.index import index
 
 
 app = FastAPI()
 
-app.include_router(user)
-app.include_router(book)
-
-
+app.include_router(index)
